@@ -316,7 +316,7 @@ class AbstractAccessToken(models.Model):
         related_name="refreshed_access_token",
     )
     token = models.CharField(
-        max_length=255,
+        max_length=2048,
         unique=True,
     )
     id_token = models.OneToOneField(
